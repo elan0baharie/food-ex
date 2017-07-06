@@ -12,6 +12,11 @@
 <div class="form-group">
   <% if @product.reviews.any? %>
     <h4>Reviews for <%= @product.name %>:</h4>
+    <ul>
+      <% @product.reviews.each do |review| %>
+        <li><%= review.content %>, <%= review.author %> - <%= review.rating %></li>
+      <% end %>
+    </ul>
   <% end %>
 </div>
 <p>
