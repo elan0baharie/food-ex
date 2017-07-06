@@ -1,2 +1,2 @@
-module ReviewHelper
+module ReviewsHelper
 end

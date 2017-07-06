@@ -3,7 +3,7 @@
 <% if @products.any? %>
   <ul>
     <% @products.each do |product|  %>
-      <li>Name: <%= link_to product.name, product_path(product) %> - $<%= product.cost %>/ Origin: <%= product.country %></li>
+      <li>Name: <%= link_to product.name, product_path(product) %> - $<%= product.cost %> - Origin: <%= product.country %></li>
     <% end %>
   </ul>
 <% end %>

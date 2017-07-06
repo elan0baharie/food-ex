@@ -1,0 +1,15 @@
+<h3>How did you like our product?</h3>
+
+<%= form_for [@product, @review] do |f| %>
+  <div class="form-group">
+    <%= f.label :content %>
+    <%= f.text_area :content %>
+    <%= f.label :author %>
+    <%= f.text_field :author %>
+    <%= f.label :rating %>
+    <%= f.number_field :rating, :min => 0, :max => 5 %>
+    <p>
+      <%= f.submit %>
+    </p>
+    <% end %>
+  </div>
