@@ -3,4 +3,28 @@
   <h4>Food purchased at a Mario's comes with outstanding freshness, quality, flavor, and variety. You know exactly where your food comes from and how it was grown. Now with the help of our database assisted tracking and review profile system we can see what you like and what you don't.</h4>
 
 </div>
+<h3>Most recently added products.</h3>
+
+<ul>
+  <% @products.most_recent_products.each do |prod| %>
+    <li><%= prod.name %> - <%= prod.country %></li>
+  <% end %>
+</ul>
+
+<h3>Made in the USA</h3>
+
+<ul>
+  <% @products.local_country.each do |prod| %>
+    <li><%= prod.name %> - <%= prod.country %></li>
+  <% end %>
+</ul>
+
+<h3>Hot topics</h3>
+
+<ul>
+  <% @products.most_reviews.each do |prod| %>
+    <li><%= prod.name %> - <%= prod.country %></li>
+  <% end %>
+</ul>
+
 <%= link_to "Products", products_path%>
