@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   get '/splashes' => 'splashes#index'
 
+  get '/about' => 'abouts#index'
+
   resources :products do
     resources :reviews
   end

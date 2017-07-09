@@ -10,11 +10,12 @@ _The purveyor of this establishment needs a site to keep track of his inventory.
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _Clone repository from https://github.com/elan0baharie/food-ex.git using a CLI_
+* _Run "bundle install"_
+* _Run postgres_
+* _Create necessary database with "rails db:create"_
+* _Seed database with "rails db:seed"_
+* _Run "rails s" and sign into localhost:3000_
 
 ## Site Plan
 
@@ -22,6 +23,7 @@ _The purveyor of this establishment needs a site to keep track of his inventory.
 * _Postgres database setup include default timestamps for scope consideration_
 * _Setup model and controller for product and review_
 * _Link required objs to template views_
+* _Create seeds for database_
 
 
 ## Known Bugs

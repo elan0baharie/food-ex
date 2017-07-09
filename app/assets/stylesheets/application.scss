@@ -1,3 +1,26 @@
 
  @import "bootstrap-sprockets";
  @import "bootstrap";
+ @import url(https://fonts.googleapis.com/css?family=Zilla+Slab);
+ @import url();
+
+ $zilla-slab: 'Zilla Slab', serif;
+
+.jumbotron {
+  border: 2px solid black;
+  box-shadow: 8px 5px 10px #888888;
+  background-image: url(cornucopia-pumpkin.jpg);
+  font-family: $zilla-slab;
+  color: white;
+
+}
+
+.welcome-wheat {
+
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.welcome-text {
+  display: inline;
+}
