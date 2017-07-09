@@ -21,6 +21,7 @@ _The purveyor of this establishment needs a site to keep track of his inventory.
 * _Two classes product with nested reviews_
 * _Postgres database setup include default timestamps for scope consideration_
 * _Setup model and controller for product and review_
+* _Link required objs to template views_
 
 
 ## Known Bugs

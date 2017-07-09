@@ -10,7 +10,7 @@ class Product < ActiveRecord::Base
   scope :most_recent_products, -> { order(created_at: :desc).limit(3)}
 
   scope :local_country, -> {
-    where("country like ?", "USA")
+    where("country like ?", "United States of America")
   }
 
   scope :most_reviews, -> {(
